@@ -1,4 +1,4 @@
-# Install script for directory: /home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader
+# Install script for directory: /home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,8 +50,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/walid/OpenCl/opencl-base-code/build/OpenCL-ICD-Loader/libOpenCL.so.1.2"
-    "/home/walid/OpenCl/opencl-base-code/build/OpenCL-ICD-Loader/libOpenCL.so.1"
+    "/home/walid/OpenCL-parallel-programming/opencl-base-code/build/OpenCL-ICD-Loader/libOpenCL.so.1.2"
+    "/home/walid/OpenCL-parallel-programming/opencl-base-code/build/OpenCL-ICD-Loader/libOpenCL.so.1"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenCL.so.1.2"
@@ -61,7 +61,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
        NOT IS_SYMLINK "${file}")
       file(RPATH_CHANGE
            FILE "${file}"
-           OLD_RPATH "/home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader/inc:/home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader/inc/CL:"
+           OLD_RPATH "/home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader/inc:/home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader/inc/CL:"
            NEW_RPATH "")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/usr/bin/strip" "${file}")
@@ -77,12 +77,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenCL.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/walid/OpenCl/opencl-base-code/build/OpenCL-ICD-Loader/libOpenCL.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/walid/OpenCL-parallel-programming/opencl-base-code/build/OpenCL-ICD-Loader/libOpenCL.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenCL.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenCL.so")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenCL.so"
-         OLD_RPATH "/home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader/inc:/home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader/inc/CL:"
+         OLD_RPATH "/home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader/inc:/home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader/inc/CL:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libOpenCL.so")

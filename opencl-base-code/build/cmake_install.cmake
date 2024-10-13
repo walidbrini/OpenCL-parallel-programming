@@ -1,4 +1,4 @@
-# Install script for directory: /home/walid/OpenCl/opencl-base-code
+# Install script for directory: /home/walid/OpenCL-parallel-programming/opencl-base-code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/walid/OpenCl/opencl-base-code/build/OpenCL-ICD-Loader/cmake_install.cmake")
+  include("/home/walid/OpenCL-parallel-programming/opencl-base-code/build/OpenCL-ICD-Loader/cmake_install.cmake")
 
 endif()
 
@@ -51,5 +51,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/walid/OpenCl/opencl-base-code/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/walid/OpenCL-parallel-programming/opencl-base-code/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

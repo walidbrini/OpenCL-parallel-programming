@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/walid/OpenCl/opencl-base-code
+CMAKE_SOURCE_DIR = /home/walid/OpenCL-parallel-programming/opencl-base-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/walid/OpenCl/opencl-base-code/build
+CMAKE_BINARY_DIR = /home/walid/OpenCL-parallel-programming/opencl-base-code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/walid/OpenCl/opencl-base-code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/walid/OpenCl/opencl-base-code/build/CMakeFiles /home/walid/OpenCl/opencl-base-code/build/OpenCL-ICD-Loader/CMakeFiles/progress.marks
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/walid/OpenCl/opencl-base-code/build/CMakeFiles 0
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/walid/OpenCL-parallel-programming/opencl-base-code/build/CMakeFiles /home/walid/OpenCL-parallel-programming/opencl-base-code/build/OpenCL-ICD-Loader/CMakeFiles/progress.marks
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/walid/OpenCL-parallel-programming/opencl-base-code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/clean
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/preinstall
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/preinstall
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/rule:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/rule
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f CMakeFiles/Makefile2 OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/rule
 .PHONY : OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ OpenCL: OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/rule
 
 # fast build rule for target.
 OpenCL/fast:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build
 .PHONY : OpenCL/fast
 
 loader/icd.o: loader/icd.c.o
@@ -177,7 +177,7 @@ loader/icd.o: loader/icd.c.o
 
 # target to build an object file
 loader/icd.c.o:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd.c.o
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd.c.o
 .PHONY : loader/icd.c.o
 
 loader/icd.i: loader/icd.c.i
@@ -186,7 +186,7 @@ loader/icd.i: loader/icd.c.i
 
 # target to preprocess a source file
 loader/icd.c.i:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd.c.i
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd.c.i
 .PHONY : loader/icd.c.i
 
 loader/icd.s: loader/icd.c.s
@@ -195,7 +195,7 @@ loader/icd.s: loader/icd.c.s
 
 # target to generate assembly for a file
 loader/icd.c.s:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd.c.s
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd.c.s
 .PHONY : loader/icd.c.s
 
 loader/icd_dispatch.o: loader/icd_dispatch.c.o
@@ -204,7 +204,7 @@ loader/icd_dispatch.o: loader/icd_dispatch.c.o
 
 # target to build an object file
 loader/icd_dispatch.c.o:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch.c.o
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch.c.o
 .PHONY : loader/icd_dispatch.c.o
 
 loader/icd_dispatch.i: loader/icd_dispatch.c.i
@@ -213,7 +213,7 @@ loader/icd_dispatch.i: loader/icd_dispatch.c.i
 
 # target to preprocess a source file
 loader/icd_dispatch.c.i:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch.c.i
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch.c.i
 .PHONY : loader/icd_dispatch.c.i
 
 loader/icd_dispatch.s: loader/icd_dispatch.c.s
@@ -222,7 +222,7 @@ loader/icd_dispatch.s: loader/icd_dispatch.c.s
 
 # target to generate assembly for a file
 loader/icd_dispatch.c.s:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch.c.s
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch.c.s
 .PHONY : loader/icd_dispatch.c.s
 
 loader/icd_dispatch_generated.o: loader/icd_dispatch_generated.c.o
@@ -231,7 +231,7 @@ loader/icd_dispatch_generated.o: loader/icd_dispatch_generated.c.o
 
 # target to build an object file
 loader/icd_dispatch_generated.c.o:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch_generated.c.o
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch_generated.c.o
 .PHONY : loader/icd_dispatch_generated.c.o
 
 loader/icd_dispatch_generated.i: loader/icd_dispatch_generated.c.i
@@ -240,7 +240,7 @@ loader/icd_dispatch_generated.i: loader/icd_dispatch_generated.c.i
 
 # target to preprocess a source file
 loader/icd_dispatch_generated.c.i:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch_generated.c.i
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch_generated.c.i
 .PHONY : loader/icd_dispatch_generated.c.i
 
 loader/icd_dispatch_generated.s: loader/icd_dispatch_generated.c.s
@@ -249,7 +249,7 @@ loader/icd_dispatch_generated.s: loader/icd_dispatch_generated.c.s
 
 # target to generate assembly for a file
 loader/icd_dispatch_generated.c.s:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch_generated.c.s
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/icd_dispatch_generated.c.s
 .PHONY : loader/icd_dispatch_generated.c.s
 
 loader/linux/icd_linux.o: loader/linux/icd_linux.c.o
@@ -258,7 +258,7 @@ loader/linux/icd_linux.o: loader/linux/icd_linux.c.o
 
 # target to build an object file
 loader/linux/icd_linux.c.o:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux.c.o
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux.c.o
 .PHONY : loader/linux/icd_linux.c.o
 
 loader/linux/icd_linux.i: loader/linux/icd_linux.c.i
@@ -267,7 +267,7 @@ loader/linux/icd_linux.i: loader/linux/icd_linux.c.i
 
 # target to preprocess a source file
 loader/linux/icd_linux.c.i:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux.c.i
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux.c.i
 .PHONY : loader/linux/icd_linux.c.i
 
 loader/linux/icd_linux.s: loader/linux/icd_linux.c.s
@@ -276,7 +276,7 @@ loader/linux/icd_linux.s: loader/linux/icd_linux.c.s
 
 # target to generate assembly for a file
 loader/linux/icd_linux.c.s:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux.c.s
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux.c.s
 .PHONY : loader/linux/icd_linux.c.s
 
 loader/linux/icd_linux_envvars.o: loader/linux/icd_linux_envvars.c.o
@@ -285,7 +285,7 @@ loader/linux/icd_linux_envvars.o: loader/linux/icd_linux_envvars.c.o
 
 # target to build an object file
 loader/linux/icd_linux_envvars.c.o:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux_envvars.c.o
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux_envvars.c.o
 .PHONY : loader/linux/icd_linux_envvars.c.o
 
 loader/linux/icd_linux_envvars.i: loader/linux/icd_linux_envvars.c.i
@@ -294,7 +294,7 @@ loader/linux/icd_linux_envvars.i: loader/linux/icd_linux_envvars.c.i
 
 # target to preprocess a source file
 loader/linux/icd_linux_envvars.c.i:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux_envvars.c.i
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux_envvars.c.i
 .PHONY : loader/linux/icd_linux_envvars.c.i
 
 loader/linux/icd_linux_envvars.s: loader/linux/icd_linux_envvars.c.s
@@ -303,7 +303,7 @@ loader/linux/icd_linux_envvars.s: loader/linux/icd_linux_envvars.c.s
 
 # target to generate assembly for a file
 loader/linux/icd_linux_envvars.c.s:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux_envvars.c.s
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/loader/linux/icd_linux_envvars.c.s
 .PHONY : loader/linux/icd_linux_envvars.c.s
 
 # Help Target
@@ -345,6 +345,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/walid/OpenCl/opencl-base-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/walid/OpenCL-parallel-programming/opencl-base-code/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

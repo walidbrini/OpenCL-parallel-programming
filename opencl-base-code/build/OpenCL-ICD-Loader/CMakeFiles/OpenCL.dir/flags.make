@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_FLAGS = -fPIC   -std=gnu99
 
-C_DEFINES = -DCL_ENABLE_LAYERS -DCL_TARGET_OPENCL_VERSION=300 -DOpenCL_EXPORTS -DSRC_PATH=\"/home/walid/OpenCl/opencl-base-code/\"
+C_DEFINES = -DCL_ENABLE_LAYERS -DCL_TARGET_OPENCL_VERSION=300 -DOpenCL_EXPORTS -DSRC_PATH=\"/home/walid/OpenCL-parallel-programming/opencl-base-code/\"
 
-C_INCLUDES = -I/home/walid/OpenCl/opencl-base-code/lib -I/home/walid/OpenCl/opencl-base-code/common -I/home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader/include -I/home/walid/OpenCl/opencl-base-code/build/OpenCL-ICD-Loader -I/home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader/loader -isystem /home/walid/OpenCl/opencl-base-code/OpenCL-ICD-Loader/inc 
+C_INCLUDES = -I/home/walid/OpenCL-parallel-programming/opencl-base-code/lib -I/home/walid/OpenCL-parallel-programming/opencl-base-code/common -I/home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader/include -I/home/walid/OpenCL-parallel-programming/opencl-base-code/build/OpenCL-ICD-Loader -I/home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader/loader -isystem /home/walid/OpenCL-parallel-programming/opencl-base-code/OpenCL-ICD-Loader/inc 
 
