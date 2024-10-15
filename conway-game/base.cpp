@@ -34,7 +34,7 @@ int main(int argc, char **argv)
     cl::Kernel *kernel = cluLoadKernel(program, "conway_game_of_life"); 
 
     // Allocate memory on the compute device 
-    const int height = 4; 
+    const int height = 5; 
     const int width = 5; 
 
     // Local group size
@@ -43,10 +43,13 @@ int main(int argc, char **argv)
     // Initialize grid
     int current_grid[height * width] = { 
         0, 0, 0, 0, 0, // Example initial configuration
-        0, 0, 0, 0, 0,
+        0, 0, 1, 0, 0,
+        0, 0, 0, 1, 0,
         0, 1, 1, 1, 0,
-        0, 0, 0, 0, 0
+        0, 0, 0, 0, 0 
     };
+
+
     
     cout << "Iteration 0" << endl;
     for (int i = 0; i < height; ++i) {
@@ -65,7 +68,7 @@ int main(int argc, char **argv)
     clu_Queue->enqueueWriteBuffer(current_buffer, CL_TRUE, 0, height * width * sizeof(int), current_grid);
 
     // Number of iterations
-    const int iterations = 3;
+    const int iterations = 20;
 
     for (int iter = 0; iter < iterations; ++iter) {
         // Set the kernel arguments
@@ -73,6 +76,8 @@ int main(int argc, char **argv)
         kernel->setArg(1, next_buffer);     // Next buffer
         kernel->setArg(2, height);          // Grid height
         kernel->setArg(3, width);           // Grid width
+        kernel->setArg(4, 1);           // periodic
+
 
         // Launch the kernel
         clu_Queue->enqueueNDRangeKernel(
