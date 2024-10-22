@@ -1,5 +1,11 @@
 // ----------------------------------------------------------
+/*
 
+Conway's Game of Life implementation with different game modes.
+An optional parameter is added to enable or disable a periodic grid:
+        kernel->setArg(4, 0);           // non-periodic grid 
+        kernel->setArg(4, 1);           // periodic grid
+*/
 // ----------------------------------------------------------
 
 
@@ -108,3 +114,7 @@ int main(int argc, char **argv)
 
     return 0;
 }
+// Submit : 
+// cmakelist
+// cl 
+// cpp 
