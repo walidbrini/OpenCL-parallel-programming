@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/base.dir/base.cpp.o"
   "CMakeFiles/base.dir/common/clutils.cpp.o"
+  "CMakeFiles/base.dir/parallel_scan.cpp.o"
   "base"
   "base.pdb"
 )

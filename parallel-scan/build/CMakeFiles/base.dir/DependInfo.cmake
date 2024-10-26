@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/walid/OpenCL-parallel-programming/parallel-scan/base.cpp" "/home/walid/OpenCL-parallel-programming/parallel-scan/build/CMakeFiles/base.dir/base.cpp.o"
   "/home/walid/OpenCL-parallel-programming/parallel-scan/common/clutils.cpp" "/home/walid/OpenCL-parallel-programming/parallel-scan/build/CMakeFiles/base.dir/common/clutils.cpp.o"
+  "/home/walid/OpenCL-parallel-programming/parallel-scan/parallel_scan.cpp" "/home/walid/OpenCL-parallel-programming/parallel-scan/build/CMakeFiles/base.dir/parallel_scan.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

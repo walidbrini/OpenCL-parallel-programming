@@ -19,7 +19,7 @@ ELSE (WIN32)
 ENDIF(WIN32)
 
 add_definitions(-DSRC_PATH=\"${CMAKE_SOURCE_DIR}/\")
-add_executable(base base.cpp base.cl common/clutils.cpp)
+add_executable(base parallel_scan.cpp p_scan.cl common/clutils.cpp)
 if(APPLE)
 	target_link_libraries(base "-framework OpenCL" )
 else()

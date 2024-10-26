@@ -182,33 +182,6 @@ OpenCL/fast:
 	$(MAKE) -f OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build.make OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir/build
 .PHONY : OpenCL/fast
 
-base.o: base.cpp.o
-
-.PHONY : base.o
-
-# target to build an object file
-base.cpp.o:
-	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/base.cpp.o
-.PHONY : base.cpp.o
-
-base.i: base.cpp.i
-
-.PHONY : base.i
-
-# target to preprocess a source file
-base.cpp.i:
-	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/base.cpp.i
-.PHONY : base.cpp.i
-
-base.s: base.cpp.s
-
-.PHONY : base.s
-
-# target to generate assembly for a file
-base.cpp.s:
-	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/base.cpp.s
-.PHONY : base.cpp.s
-
 common/clutils.o: common/clutils.cpp.o
 
 .PHONY : common/clutils.o
@@ -236,6 +209,33 @@ common/clutils.cpp.s:
 	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/common/clutils.cpp.s
 .PHONY : common/clutils.cpp.s
 
+parallel_scan.o: parallel_scan.cpp.o
+
+.PHONY : parallel_scan.o
+
+# target to build an object file
+parallel_scan.cpp.o:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/parallel_scan.cpp.o
+.PHONY : parallel_scan.cpp.o
+
+parallel_scan.i: parallel_scan.cpp.i
+
+.PHONY : parallel_scan.i
+
+# target to preprocess a source file
+parallel_scan.cpp.i:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/parallel_scan.cpp.i
+.PHONY : parallel_scan.cpp.i
+
+parallel_scan.s: parallel_scan.cpp.s
+
+.PHONY : parallel_scan.s
+
+# target to generate assembly for a file
+parallel_scan.cpp.s:
+	$(MAKE) -f CMakeFiles/base.dir/build.make CMakeFiles/base.dir/parallel_scan.cpp.s
+.PHONY : parallel_scan.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -250,12 +250,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... base"
 	@echo "... OpenCL"
-	@echo "... base.o"
-	@echo "... base.i"
-	@echo "... base.s"
 	@echo "... common/clutils.o"
 	@echo "... common/clutils.i"
 	@echo "... common/clutils.s"
+	@echo "... parallel_scan.o"
+	@echo "... parallel_scan.i"
+	@echo "... parallel_scan.s"
 .PHONY : help
 
 

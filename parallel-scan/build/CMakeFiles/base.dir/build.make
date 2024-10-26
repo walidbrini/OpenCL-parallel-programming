@@ -57,18 +57,18 @@ include CMakeFiles/base.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/base.dir/flags.make
 
-CMakeFiles/base.dir/base.cpp.o: CMakeFiles/base.dir/flags.make
-CMakeFiles/base.dir/base.cpp.o: ../base.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/walid/OpenCL-parallel-programming/parallel-scan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/base.dir/base.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/base.cpp.o -c /home/walid/OpenCL-parallel-programming/parallel-scan/base.cpp
+CMakeFiles/base.dir/parallel_scan.cpp.o: CMakeFiles/base.dir/flags.make
+CMakeFiles/base.dir/parallel_scan.cpp.o: ../parallel_scan.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/walid/OpenCL-parallel-programming/parallel-scan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/base.dir/parallel_scan.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/base.dir/parallel_scan.cpp.o -c /home/walid/OpenCL-parallel-programming/parallel-scan/parallel_scan.cpp
 
-CMakeFiles/base.dir/base.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/base.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/walid/OpenCL-parallel-programming/parallel-scan/base.cpp > CMakeFiles/base.dir/base.cpp.i
+CMakeFiles/base.dir/parallel_scan.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/base.dir/parallel_scan.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/walid/OpenCL-parallel-programming/parallel-scan/parallel_scan.cpp > CMakeFiles/base.dir/parallel_scan.cpp.i
 
-CMakeFiles/base.dir/base.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/base.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/walid/OpenCL-parallel-programming/parallel-scan/base.cpp -o CMakeFiles/base.dir/base.cpp.s
+CMakeFiles/base.dir/parallel_scan.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/base.dir/parallel_scan.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/walid/OpenCL-parallel-programming/parallel-scan/parallel_scan.cpp -o CMakeFiles/base.dir/parallel_scan.cpp.s
 
 CMakeFiles/base.dir/common/clutils.cpp.o: CMakeFiles/base.dir/flags.make
 CMakeFiles/base.dir/common/clutils.cpp.o: ../common/clutils.cpp
@@ -85,13 +85,13 @@ CMakeFiles/base.dir/common/clutils.cpp.s: cmake_force
 
 # Object files for target base
 base_OBJECTS = \
-"CMakeFiles/base.dir/base.cpp.o" \
+"CMakeFiles/base.dir/parallel_scan.cpp.o" \
 "CMakeFiles/base.dir/common/clutils.cpp.o"
 
 # External object files for target base
 base_EXTERNAL_OBJECTS =
 
-base: CMakeFiles/base.dir/base.cpp.o
+base: CMakeFiles/base.dir/parallel_scan.cpp.o
 base: CMakeFiles/base.dir/common/clutils.cpp.o
 base: CMakeFiles/base.dir/build.make
 base: OpenCL-ICD-Loader/libOpenCL.so.1.2
