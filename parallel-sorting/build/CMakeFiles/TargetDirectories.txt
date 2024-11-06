@@ -1,0 +1,14 @@
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/CMakeFiles/install/strip.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/CMakeFiles/install/local.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/CMakeFiles/install.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/CMakeFiles/list_install_components.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/CMakeFiles/rebuild_cache.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/CMakeFiles/edit_cache.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/CMakeFiles/base.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/OpenCL-ICD-Loader/CMakeFiles/install/strip.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/OpenCL-ICD-Loader/CMakeFiles/install/local.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/OpenCL-ICD-Loader/CMakeFiles/edit_cache.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/OpenCL-ICD-Loader/CMakeFiles/install.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/OpenCL-ICD-Loader/CMakeFiles/list_install_components.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/OpenCL-ICD-Loader/CMakeFiles/rebuild_cache.dir
+/home/walid/OpenCL-parallel-programming/parallel-sorting/build/OpenCL-ICD-Loader/CMakeFiles/OpenCL.dir

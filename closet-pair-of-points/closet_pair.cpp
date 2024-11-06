@@ -101,7 +101,8 @@ int main() {
         if (distance_results[i] < gpu_closest_distance) {
             gpu_closest_distance = distance_results[i];
         }
-    }    cout << "GPU Closest Pair Distance" << ": " << gpu_closest_distance << endl;
+    }    
+    cout << "GPU Closest Pair Distance" << ": " << gpu_closest_distance << endl;
 
     // Compare CPU and GPU results with a tolerance 
     // Floating-point for CPU and GPU they handle precision and rounding differntly
