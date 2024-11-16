@@ -129,22 +129,22 @@ int main(int argc, char **argv) {
     cl::Buffer a_buffer(*clu_Context, CL_MEM_READ_WRITE | CL_MEM_COPY_HOST_PTR,
                        N * sizeof(int), tab);
 
-    // Process each layer of the sorting network
-    for (const auto& layer : network) {
-        // Create buffer for all pairs in this layer
-        int num_pairs = layer.size();
+    // Process each level of the sorting network
+    for (const auto& level : network) {
+        // Create buffer for all pairs in this level
+        int num_pairs = level.size();
         cl::Buffer pairs_buffer(*clu_Context, CL_MEM_READ_ONLY, num_pairs * sizeof(Pair));
         
-        // Copy layer pairs to device
+        // Copy level pairs to device
         clu_Queue->enqueueWriteBuffer(pairs_buffer, CL_TRUE, 0, 
-                                    num_pairs * sizeof(Pair), layer.data());
+                                    num_pairs * sizeof(Pair), level.data());
         
         // Set kernel arguments
         kernel->setArg(0, a_buffer);
         kernel->setArg(1, pairs_buffer);
         kernel->setArg(2, num_pairs);
 
-        // Execute kernel for all pairs in this layer
+        // Execute kernel for all pairs in this level
         clu_Queue->enqueueNDRangeKernel(
             *kernel,
             cl::NullRange,
