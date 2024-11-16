@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0)
-project(base)
+project(optimal_networks)
 set (CMAKE_CXX_STANDARD 11)
 
 include_directories(
@@ -19,11 +19,11 @@ ELSE (WIN32)
 ENDIF(WIN32)
 
 add_definitions(-DSRC_PATH=\"${CMAKE_SOURCE_DIR}/\")
-add_executable(bitonic_sort bitonic_sort.cpp bitonic_compare_swap.cl common/clutils.cpp)
+add_executable(optimal_networks optimal_networks.cpp sort.cl common/clutils.cpp)
 if(APPLE)
-	target_link_libraries(bitonic_sort "-framework OpenCL" )
+	target_link_libraries(optimal_networks "-framework OpenCL" )
 else()
-	target_link_libraries(bitonic_sort ${CL_LIBRARIES})
+	target_link_libraries(optimal_networks ${CL_LIBRARIES})
 endif()
 
 add_subdirectory(OpenCL-ICD-Loader)
